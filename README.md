@@ -14,10 +14,11 @@ Example usage
     };
 
     ts3.exec('login', credentials, console.log);
-
+    // -> null null
+    
     // Provide a callback with the signature (error, response)
     ts3.exec('version', console.log);
-    // -> null null
+    // -> null [ { version: '3.0.10.1', build: '1383908996', platform: 'Linux' } ]
     
     // Set parameters using objects
     ts3.exec('use', {sid:'1'}, console.log);
